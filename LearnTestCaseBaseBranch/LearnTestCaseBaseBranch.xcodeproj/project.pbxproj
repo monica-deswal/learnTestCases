@@ -13,9 +13,11 @@
 		271085882B6262980095C4A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271085862B6262980095C4A8 /* Main.storyboard */; };
 		2710858A2B62629A0095C4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271085892B62629A0095C4A8 /* Assets.xcassets */; };
 		2710858D2B62629A0095C4A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2710858B2B62629A0095C4A8 /* LaunchScreen.storyboard */; };
-		271085982B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085972B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift */; };
 		271085A22B62629A0095C4A8 /* LearnTestCaseBaseBranchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085A12B62629A0095C4A8 /* LearnTestCaseBaseBranchUITests.swift */; };
 		271085A42B62629A0095C4A8 /* LearnTestCaseBaseBranchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085A32B62629A0095C4A8 /* LearnTestCaseBaseBranchUITestsLaunchTests.swift */; };
+		271085B12B637A8D0095C4A8 /* SignUpFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085B02B637A8D0095C4A8 /* SignUpFormModelValidatorTests.swift */; };
+		271085B32B639FC90095C4A8 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085B22B639FC90095C4A8 /* SignUpFormModelValidator.swift */; };
+		271085B52B63C1C10095C4A8 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085B42B63C1C10095C4A8 /* SignupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +47,12 @@
 		2710858C2B62629A0095C4A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2710858E2B62629A0095C4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		271085932B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnTestCaseBaseBranchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		271085972B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTestCaseBaseBranchTests.swift; sourceTree = "<group>"; };
 		2710859D2B62629A0095C4A8 /* LearnTestCaseBaseBranchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnTestCaseBaseBranchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		271085A12B62629A0095C4A8 /* LearnTestCaseBaseBranchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTestCaseBaseBranchUITests.swift; sourceTree = "<group>"; };
 		271085A32B62629A0095C4A8 /* LearnTestCaseBaseBranchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTestCaseBaseBranchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		271085B02B637A8D0095C4A8 /* SignUpFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		271085B22B639FC90095C4A8 /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
+		271085B42B63C1C10095C4A8 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				271085892B62629A0095C4A8 /* Assets.xcassets */,
 				2710858B2B62629A0095C4A8 /* LaunchScreen.storyboard */,
 				2710858E2B62629A0095C4A8 /* Info.plist */,
+				271085B22B639FC90095C4A8 /* SignUpFormModelValidator.swift */,
+				271085B42B63C1C10095C4A8 /* SignupConstants.swift */,
 			);
 			path = LearnTestCaseBaseBranch;
 			sourceTree = "<group>";
@@ -113,7 +119,7 @@
 		271085962B62629A0095C4A8 /* LearnTestCaseBaseBranchTests */ = {
 			isa = PBXGroup;
 			children = (
-				271085972B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift */,
+				271085B02B637A8D0095C4A8 /* SignUpFormModelValidatorTests.swift */,
 			);
 			path = LearnTestCaseBaseBranchTests;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 					};
 					271085922B62629A0095C4A8 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 						TestTargetID = 2710857C2B6262980095C4A8;
 					};
 					2710859C2B62629A0095C4A8 = {
@@ -260,6 +267,8 @@
 			files = (
 				271085852B6262980095C4A8 /* ViewController.swift in Sources */,
 				271085812B6262980095C4A8 /* AppDelegate.swift in Sources */,
+				271085B32B639FC90095C4A8 /* SignUpFormModelValidator.swift in Sources */,
+				271085B52B63C1C10095C4A8 /* SignupConstants.swift in Sources */,
 				271085832B6262980095C4A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271085982B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift in Sources */,
+				271085B12B637A8D0095C4A8 /* SignUpFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +505,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PWK5WLZ6R6;
@@ -505,6 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LearningSample.LearnTestCaseBaseBranchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnTestCaseBaseBranch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LearnTestCaseBaseBranch";
@@ -516,6 +527,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PWK5WLZ6R6;
