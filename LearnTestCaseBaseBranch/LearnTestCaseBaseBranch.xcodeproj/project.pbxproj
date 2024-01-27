@@ -16,6 +16,11 @@
 		271085982B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085972B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift */; };
 		271085A22B62629A0095C4A8 /* LearnTestCaseBaseBranchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085A12B62629A0095C4A8 /* LearnTestCaseBaseBranchUITests.swift */; };
 		271085A42B62629A0095C4A8 /* LearnTestCaseBaseBranchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085A32B62629A0095C4A8 /* LearnTestCaseBaseBranchUITestsLaunchTests.swift */; };
+		271085B72B650C730095C4A8 /* SignupWebserviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085B62B650C730095C4A8 /* SignupWebserviceTests.swift */; };
+		271085B92B650CEC0095C4A8 /* SignupWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085B82B650CEC0095C4A8 /* SignupWebservice.swift */; };
+		271085BB2B650DC70095C4A8 /* SignUpFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085BA2B650DC70095C4A8 /* SignUpFormRequestModel.swift */; };
+		271085BD2B650F100095C4A8 /* SignUpFormResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085BC2B650F100095C4A8 /* SignUpFormResponseModel.swift */; };
+		271085BF2B650F890095C4A8 /* SignUpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271085BE2B650F890095C4A8 /* SignUpErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		2710859D2B62629A0095C4A8 /* LearnTestCaseBaseBranchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnTestCaseBaseBranchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		271085A12B62629A0095C4A8 /* LearnTestCaseBaseBranchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTestCaseBaseBranchUITests.swift; sourceTree = "<group>"; };
 		271085A32B62629A0095C4A8 /* LearnTestCaseBaseBranchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTestCaseBaseBranchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		271085B62B650C730095C4A8 /* SignupWebserviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebserviceTests.swift; sourceTree = "<group>"; };
+		271085B82B650CEC0095C4A8 /* SignupWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebservice.swift; sourceTree = "<group>"; };
+		271085BA2B650DC70095C4A8 /* SignUpFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormRequestModel.swift; sourceTree = "<group>"; };
+		271085BC2B650F100095C4A8 /* SignUpFormResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormResponseModel.swift; sourceTree = "<group>"; };
+		271085BE2B650F890095C4A8 /* SignUpErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,9 @@
 		2710857F2B6262980095C4A8 /* LearnTestCaseBaseBranch */ = {
 			isa = PBXGroup;
 			children = (
+				271085C02B6510BF0095C4A8 /* SignUp */,
 				271085802B6262980095C4A8 /* AppDelegate.swift */,
 				271085822B6262980095C4A8 /* SceneDelegate.swift */,
-				271085842B6262980095C4A8 /* ViewController.swift */,
 				271085862B6262980095C4A8 /* Main.storyboard */,
 				271085892B62629A0095C4A8 /* Assets.xcassets */,
 				2710858B2B62629A0095C4A8 /* LaunchScreen.storyboard */,
@@ -113,6 +123,7 @@
 		271085962B62629A0095C4A8 /* LearnTestCaseBaseBranchTests */ = {
 			isa = PBXGroup;
 			children = (
+				271085C42B65112F0095C4A8 /* SignUp */,
 				271085972B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift */,
 			);
 			path = LearnTestCaseBaseBranchTests;
@@ -125,6 +136,50 @@
 				271085A32B62629A0095C4A8 /* LearnTestCaseBaseBranchUITestsLaunchTests.swift */,
 			);
 			path = LearnTestCaseBaseBranchUITests;
+			sourceTree = "<group>";
+		};
+		271085C02B6510BF0095C4A8 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				271085C32B65110F0095C4A8 /* Network */,
+				271085C22B6510F80095C4A8 /* Controllers */,
+				271085C12B6510D20095C4A8 /* Model */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		271085C12B6510D20095C4A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				271085BA2B650DC70095C4A8 /* SignUpFormRequestModel.swift */,
+				271085BC2B650F100095C4A8 /* SignUpFormResponseModel.swift */,
+				271085BE2B650F890095C4A8 /* SignUpErrors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		271085C22B6510F80095C4A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				271085842B6262980095C4A8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		271085C32B65110F0095C4A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				271085B82B650CEC0095C4A8 /* SignupWebservice.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		271085C42B65112F0095C4A8 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				271085B62B650C730095C4A8 /* SignupWebserviceTests.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271085BD2B650F100095C4A8 /* SignUpFormResponseModel.swift in Sources */,
 				271085852B6262980095C4A8 /* ViewController.swift in Sources */,
+				271085BF2B650F890095C4A8 /* SignUpErrors.swift in Sources */,
 				271085812B6262980095C4A8 /* AppDelegate.swift in Sources */,
+				271085BB2B650DC70095C4A8 /* SignUpFormRequestModel.swift in Sources */,
+				271085B92B650CEC0095C4A8 /* SignupWebservice.swift in Sources */,
 				271085832B6262980095C4A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271085B72B650C730095C4A8 /* SignupWebserviceTests.swift in Sources */,
 				271085982B62629A0095C4A8 /* LearnTestCaseBaseBranchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
