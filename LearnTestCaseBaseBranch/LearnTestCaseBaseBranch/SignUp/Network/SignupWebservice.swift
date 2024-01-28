@@ -20,7 +20,7 @@ class SignupWebservice {
     func signup(withForm formModel: SignUpFormRequestModel, completioHandler: @escaping (SignUpFormResponseModel?, SignUpErrors?) -> Void) {
         
         guard let url = URL(string: urlString) else {
-            //TODO: create a uit test
+            completioHandler(nil, SignUpErrors.invalidRequuestURLStringError)
             return }
         
         var request = URLRequest(url: url)
@@ -30,14 +30,17 @@ class SignupWebservice {
         
         request.httpBody = try? JSONEncoder().encode(formModel)
         
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            //TODO: unit test to hadle error
+        let dataTask = urlSession.dataTask(with: request) { (data, response, error) in
+            if let requestError = error {
+                completioHandler(nil, SignUpErrors.failedRequest(description: requestError.localizedDescription))
+                return
+            }
             
             if let data = data, let signUpResposeModel = try? JSONDecoder().decode(SignUpFormResponseModel.self, from: data) {
                 
                 completioHandler(signUpResposeModel, nil)
             } else {
-                //TODO: Handle error
+                completioHandler(nil, SignUpErrors.responseModelParsingError)
             }
             
         }

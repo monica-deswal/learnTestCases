@@ -54,6 +54,6 @@ final class LearnTestCaseBaseBranchTests: XCTestCase {
         
         let isEmailFormatValid = sigUpFormModel.isValidEmail()
         
-        XCTAssertTrue(isEmailFormatValid, "Email address format is ot correct")
+        XCTAssertFalse(isEmailFormatValid, "Email address format is not correct")
     }
 }
